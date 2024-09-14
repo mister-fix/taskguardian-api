@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1] - 09/14/2024
+
+### Added
+
+- New development dependency: `eslint-plugin-jest`, enabled plugin the ESLint configuration file.
+- `tests/` folder for integration tests contains the `root-api.test.js` file with a simple API response test defined.
+- `tests` path alias in the `_moduleAliases` block of the `package.json` file.
+- `tests` path alias in the ESLint configuration file for import resolver settings.
+
+### Updated
+
+- `README.md` file: expanded project structure tree to reflect the addition of the `tests/` folder.
+
+### Modified
+
+- Express application instance import code in the `index.js` file.
+- `@` path alias in the `_moduleAliases` block of the `package.json` file.
+
 ## [0.2.0] - 09/14/2024
 
 ### Added
@@ -122,7 +140,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` and `package-lock.json` for npm dependencies.
 - `README.md` for project documentation.
 
-[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.0...HEAD
+[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.0...v0.1.1
