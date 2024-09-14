@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - ESLint import plugins: `eslint-import-resolver-alias`, `eslint-plugin-import`, and `eslint-plugin-unused-imports`.
 - Prettier import plugins: `prettier-plugin-import-sort`, `prettier-plugin-organize-imports`, and `prettier-plugin-sort-imports`.
-- Enabled installed plugins in their corresponding configuration files (`.eslintrc.js`, and `.prettierrc.js`).
+- Enabled the aforementioned plugins in their corresponding configuration files (`.eslintrc.js`, and `.prettierrc.js`).
 
 ## [0.1.1] - 09/14/2024
 
