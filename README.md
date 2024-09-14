@@ -50,6 +50,7 @@ taskguardian-api/
 ├─ .prettierrc            # Prettier configuration for code formatting
 ├─ CHANGELOG.md           # Changelog for project updates
 ├─ cspell.json            # Configuration for spellcheck
+├─ jsdoc.config.json      # JSDoc configuration
 ├─ LICENSE                # Project license
 ├─ logo-light.svg         # Light mode logo for the project
 ├─ logo.svg               # Primary logo for the project
