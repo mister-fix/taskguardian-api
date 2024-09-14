@@ -10,6 +10,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:prettier/recommended',
     'plugin:@cspell/recommended',
+    'plugin:jsdoc/recommended',
   ],
   overrides: [
     {
@@ -27,7 +28,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['prettier'],
+  plugins: ['prettier', 'jsdoc'],
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, semi: true }],
     '@cspell/spellchecker': ['warn', { checkComments: false, autoFix: true }],
