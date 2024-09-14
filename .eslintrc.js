@@ -41,7 +41,7 @@ module.exports = {
       },
       alias: {
         map: [
-          ['@', path.resolve(__dirname, './src/')],
+          ['@src', path.resolve(__dirname, './src/')],
           ['@config', path.resolve(__dirname, './src/config/')],
           ['@controllers', path.resolve(__dirname, './src/controllers/')],
           ['@db', path.resolve(__dirname, './src/db/')],
