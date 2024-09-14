@@ -5,7 +5,7 @@ require('module-alias/register');
 require('dotenv').config();
 
 // Import the Express app instance
-const app = require('@/app');
+const app = require('@src/app');
 
 // Configure the server host from the environment variables
 const host = process.env.HOST ?? '0.0.0.0'; // '0.0.0.0' is production fallback
