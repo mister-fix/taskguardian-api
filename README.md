@@ -41,8 +41,11 @@ taskguardian-api/
 ├─ .vscode/               # VSCode settings and extensions
 ├─ docs/                  # GitHub supporting documents and templates
 ├─ plop-templates/        # Code generation templates (e.g., controllers, services)
+├─ src/                   # Main source code directory
+│  ├─ app.js              # Express app setup
 ├─ .commitlintrc.js       # Commit message linting configuration
 ├─ .editorconfig          # Editor configuration for consistent coding styles
+├─ .env.example           # Example .env file
 ├─ .eslintignore          # Files and directories to ignore for ESLint
 ├─ .eslintrc.js           # ESLint configuration for code linting
 ├─ .gitattributes         # Git attributes for the project
@@ -51,11 +54,13 @@ taskguardian-api/
 ├─ .prettierrc            # Prettier configuration for code formatting
 ├─ CHANGELOG.md           # Changelog for project updates
 ├─ cspell.json            # Configuration for spellcheck
+├─ index.js               # Application entry point
 ├─ jsconfig.json          # JavaScript project configuration (aliases)
 ├─ jsdoc.config.json      # JSDoc configuration
 ├─ LICENSE                # Project license
 ├─ logo-light.svg         # Light mode logo for the project
 ├─ logo.svg               # Primary logo for the project
+├─ nodemon.json           # Nodemon configuration for automatic server restarts
 ├─ package-lock.json      # Locked versions of dependencies
 ├─ package.json           # Project metadata and dependencies
 ├─ plopfile.js            # Plop.js configuration for code generation
