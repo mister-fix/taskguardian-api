@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    // Target the latest ECMAScript version supported by your Node.js version.
+    "target": "ES6",
+
+    // Specifies module system used in the project.
+    "module": "commonjs",
+
+    // Enable strict type-checking options.
+    "strict": true,
+
+    // Specify the output directory for compiled files, if needed.
+    "outDir": "./dist",
+
+    // Enables resolution of Node.js modules.
+    "moduleResolution": "node",
+
+    // Allows modern ECMAScript modules interop with CommonJS.
+    "esModuleInterop": true,
+
+    // Enable importing of CommonJS modules using the ES6 module syntax.
+    "allowSyntheticDefaultImports": true,
+
+    // Allows JavaScript files to be included in the project.
+    "allowJs": true,
+
+    // Disables type-checking for JavaScript files in the project.
+    "checkJs": false,
+
+    // Allows interop between CommonJS and ES modules
+    "resolveJsonModule": true,
+
+    // Base directory to resolve non-relative module names
+    "baseUrl": "./",
+
+    // Defines custom path aliases for easier imports
+    "paths": {
+      "@/*": ["src/*"],
+      "@config/*": ["src/config/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@db/*": ["src/db/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@models/*": ["src/models/*"],
+      "@routes/*": ["src/routes/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@validators/*": ["src/validators/*"]
+    }
+  },
+  "exclude": [
+    // Exclude directories
+    "node_modules",
+    "dist",
+    "tmp",
+    "jsdoc",
+    "apps/client/dist",
+    "apps/server/dist"
+  ],
+  "include": [
+    // Include all JavaScript and TypeScript files within the project.
+    "./src/**/*.js",
+    "./src/**/*.ts"
+  ],
+  "typeAcquisition": {
+    // Automatically acquire types for listed packages, aiding development.
+    "enable": true,
+    "include": ["jest", "node"]
+  },
+  "compileOnSave": false
+}
