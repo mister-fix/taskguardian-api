@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 09/14/2024
+
+### Added
+
+- ESLint import plugins: `eslint-import-resolver-alias`, `eslint-plugin-import`, and `eslint-plugin-unused-imports`.
+- Prettier import plugins: `prettier-plugin-import-sort`, `prettier-plugin-organize-imports`, and `prettier-plugin-sort-imports`.
+- Enabled installed plugins in their corresponding configuration files (`.eslintrc.js`, and `.prettierrc.js`).
+
 ## [0.1.1] - 09/14/2024
 
 ### Added
@@ -99,7 +107,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` and `package-lock.json` for npm dependencies.
 - `README.md` for project documentation.
 
-[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.1...HEAD
+[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.0.4...v0.1.0
 [0.0.4]: https://github.com/mister-fix/taskguardian-api/compare/v0.0.3...v0.0.4
