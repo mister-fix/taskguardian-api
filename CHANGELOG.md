@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 09/14/2024
+
+### Added
+
+- `src/app.js` file for Express app configuration.
+- `index.js` file to serve as the entry point for the application.
+- `nodemon.json` configuration file for Nodemon.
+- New dependencies: `cors`, `cross-env`, `dotenv`, `express`, `express-async-errors`, `helmet`, `module-alias`, `morgan`.
+- New development dependencies: `nodemon`.
+- Added the Server `start` and `dev` scripts, `_moduleAliases` block, `type` and `main` properties in the package.json file.
+
+### Updated
+
+- `README.md` file: expanded project structure tree to reflect the addition of the `index.js` file, `src/` folder, and `nodemon.json` file.
+
 ## [0.1.2] - 09/14/2024
 
 ### Added
@@ -107,7 +122,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` and `package-lock.json` for npm dependencies.
 - `README.md` for project documentation.
 
-[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.2...HEAD
+[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.0.4...v0.1.0
