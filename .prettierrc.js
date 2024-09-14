@@ -24,5 +24,10 @@ module.exports = {
       },
     },
   ],
-  plugins: ['prettier-plugin-jsdoc'],
+  plugins: [
+    'prettier-plugin-jsdoc',
+    'prettier-plugin-import-sort',
+    'prettier-plugin-organize-imports',
+    'prettier-plugin-sort-imports',
+  ],
 };

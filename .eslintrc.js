@@ -1,4 +1,7 @@
-// ESLint configuration
+// Import 'path' package for use in defining module aliases
+const path = require('path');
+
+// ESLint configuration options
 module.exports = {
   root: true,
   env: {
@@ -9,8 +12,9 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
-    'plugin:@cspell/recommended',
+    'plugin:import/recommended',
     'plugin:jsdoc/recommended',
+    'plugin:@cspell/recommended',
   ],
   overrides: [
     {
@@ -28,7 +32,30 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['prettier', 'jsdoc'],
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.d.ts', '.tsx'],
+      },
+      alias: {
+        map: [
+          ['@', path.resolve(__dirname, './src/')],
+          ['@config', path.resolve(__dirname, './src/config/')],
+          ['@controllers', path.resolve(__dirname, './src/controllers/')],
+          ['@db', path.resolve(__dirname, './src/db/')],
+          ['@middleware', path.resolve(__dirname, './src/middleware/')],
+          ['@models', path.resolve(__dirname, './src/models/')],
+          ['@routes', path.resolve(__dirname, './src/routes/')],
+          ['@services', path.resolve(__dirname, './src/services/')],
+          ['@utils', path.resolve(__dirname, './src/utils/')],
+          ['@validators', path.resolve(__dirname, './src/validators/')],
+        ],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+      },
+    },
+  },
+  plugins: ['prettier', 'unused-imports', 'jsdoc', 'import'],
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, semi: true }],
     '@cspell/spellchecker': ['warn', { checkComments: false, autoFix: true }],
@@ -66,5 +93,8 @@ module.exports = {
         ignoreRestSiblings: false,
       },
     ],
+    'import/no-unresolved': [2, { commonjs: true, amd: true }],
+    // 'import/namespace': 'off', // Disabled globally for now
+    // 'import/named': 'off', // Disabled globally for now
   },
 };
