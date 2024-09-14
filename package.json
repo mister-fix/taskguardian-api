@@ -2,7 +2,7 @@
   "name": "taskguardian-api",
   "description": "A secure and efficient task management API with JWT authentication, route protection, and comprehensive testing.",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "@mister-fix <https://github.com/mister-fix/>",
   "license": "MIT",
   "keywords": [
@@ -38,6 +38,8 @@
     "cspell": "^8.14.2",
     "cspell-dictionary": "^8.14.2",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
