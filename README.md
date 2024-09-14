@@ -43,6 +43,7 @@ taskguardian-api/
 ├─ plop-templates/        # Code generation templates (e.g., controllers, services)
 ├─ src/                   # Main source code directory
 │  ├─ app.js              # Express app setup
+├─ tests/                 # API Integration tests directory
 ├─ .commitlintrc.js       # Commit message linting configuration
 ├─ .editorconfig          # Editor configuration for consistent coding styles
 ├─ .env.example           # Example .env file
