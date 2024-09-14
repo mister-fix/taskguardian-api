@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 09/14/2024
+
+### Added
+
+- `eslint-plugin-prettier` and `eslint-config-prettier` plugins for use in the ESLint configuration file and to fix the GitHub linting workflow.
+
+### Modified
+
+- `.husky/pre-commit` file: uncommented commitlint command.
+- VSCode settings example file name under the added section of the [0.0.1] tag in this `CHANGELOG.md` file.
+
 ## [0.0.1] - 09/13/2024
 
 ### Added
@@ -19,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `.husky/` folder for managing Git hooks.
 - `.vscode/` folder containing:
   - `extensions.json` listing recommended extensions.
-  - `settings.example.json` for example VSCode settings that currently in use by contributors.
+  - `vscode-settings-example` for example VSCode settings that currently in use by contributors.
 - `docs/` folder containing:
   - `SECURITY.md` for security guidelines.
   - `pull_request_template.md` for standard PR format.
@@ -40,5 +51,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` and `package-lock.json` for npm dependencies.
 - `README.md` for project documentation.
 
-[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/mister-fix/taskguardian-api/releases/tag/v0.0.1
