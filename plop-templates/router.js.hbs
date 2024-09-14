@@ -1,0 +1,44 @@
+/**
+ * Express router providing user-related routes
+ * @module routers/{{name}}
+ * @requires express
+ */
+
+/**
+* Express framework module
+* @external express
+* @see {@link https://expressjs.com/|Express Documentation}
+* @description This module is used to create and manage an Express application.
+* @constant
+*/
+const express = require('express');
+
+// Import required middleware (remove if not needed)
+
+{{#if controller}}
+// Import required controller
+const controller = require('@controllers/{{controller}}-controller');
+{{/if}}
+
+/**
+ * Express router to mount user related functions on.
+ * @type {object}
+ * @constant
+ * @namespace {{name}}Router
+ */
+const router = express.Router();
+
+/**
+* Place your router methods and endpoints below.
+* @example User registration endpoint.
+* * @name POST /register
+* * @function
+* * @description User registration endpoint.
+* * @access public
+* * @memberof module:routers.auth~auth-router
+* * @inner
+* * router.post('/register', registerUser)
+*/
+
+// Export router to be used in other parts of the API
+module.exports = router;
