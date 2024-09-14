@@ -40,6 +40,7 @@ taskguardian-api/
 ├─ .husky/                # Git hooks for commit checks
 ├─ .vscode/               # VSCode settings and extensions
 ├─ docs/                  # GitHub supporting documents and templates
+├─ plop-templates/        # Code generation templates (e.g., controllers, services)
 ├─ .commitlintrc.js       # Commit message linting configuration
 ├─ .editorconfig          # Editor configuration for consistent coding styles
 ├─ .eslintignore          # Files and directories to ignore for ESLint
