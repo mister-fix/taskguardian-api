@@ -8,6 +8,7 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
+    'jest/globals': true,
   },
   extends: [
     'eslint:recommended',
@@ -35,7 +36,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        paths: ['src'],
+        paths: ['.', 'src'],
         extensions: ['.js', '.jsx', '.ts', '.d.ts', '.tsx'],
       },
       alias: {
@@ -50,12 +51,13 @@ module.exports = {
           ['@services', path.resolve(__dirname, './src/services/')],
           ['@utils', path.resolve(__dirname, './src/utils/')],
           ['@validators', path.resolve(__dirname, './src/validators/')],
+          ['@tests', path.resolve(__dirname, './tests/')],
         ],
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       },
     },
   },
-  plugins: ['prettier', 'unused-imports', 'jsdoc', 'import'],
+  plugins: ['prettier', 'unused-imports', 'jsdoc', 'import', 'jest'],
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, semi: true }],
     '@cspell/spellchecker': ['warn', { checkComments: false, autoFix: true }],
@@ -96,5 +98,10 @@ module.exports = {
     'import/no-unresolved': [2, { commonjs: true, amd: true }],
     // 'import/namespace': 'off', // Disabled globally for now
     // 'import/named': 'off', // Disabled globally for now
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error',
   },
 };
