@@ -1,0 +1,16 @@
+{
+	"recommendations": [
+		"bradlc.vscode-tailwindcss",
+		"mikestead.dotenv",
+		"editorconfig.editorconfig",
+		"dsznajder.es7-react-js-snippets",
+		"dbaeumer.vscode-eslint",
+		"github.vscode-github-actions",
+		"yzhang.markdown-all-in-one",
+		"davidanson.vscode-markdownlint",
+		"csstools.postcss",
+		"svipas.prettier-plus",
+		"streetsidesoftware.code-spell-checker",
+		"ms-azuretools.vscode-docker"
+	]
+}

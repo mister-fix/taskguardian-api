@@ -1,0 +1,34 @@
+# These are the settings I run on VSCode
+
+{
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "editor.tabSize": 2,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.format.semicolons": "insert",
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "prettier.requireConfig": true,
+  "prettier.configPath": "./.prettierrc",
+  "files.associations": {
+    "*.env": "dotenv"
+  },
+  "[dotenv]": {
+    "editor.wordWrap": "off"
+  },
+  "[plaintext]": {
+    "editor.wordWrap": "off"
+  },
+  "[editorconfig]": {
+    "editor.wordWrap": "off"
+  },
+  "[json]": {
+    "editor.wordWrap": "off"
+  },
+  "[log]": {
+    "editor.wordWrap": "off"
+  }
+}
