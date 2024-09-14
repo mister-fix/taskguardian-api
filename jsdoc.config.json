@@ -1,0 +1,15 @@
+{
+  "source": {
+    "include": ["."],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "exclude": [
+      "node_modules",
+      "plopfile.js",
+      ".eslintrc.js",
+      ".prettierrc.js",
+      "logs",
+      "out",
+      "e2e"
+    ]
+  }
+}
