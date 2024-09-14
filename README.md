@@ -57,6 +57,7 @@ taskguardian-api/
 ├─ logo.svg               # Primary logo for the project
 ├─ package-lock.json      # Locked versions of dependencies
 ├─ package.json           # Project metadata and dependencies
+├─ plopfile.js            # Plop.js configuration for code generation
 ├─ README.md              # Project documentation
 ```
 
