@@ -1,0 +1,27 @@
+# Custom Dictionary Words
+
+taskguardian-api
+Dotenv
+Bcrypt
+Nodemailer
+Sendgrid
+jsonwebtoken
+Lucide
+rxaviers
+plopfile
+choosealicense
+swiper
+Vitest
+npmjs
+tarfile
+toolset
+tailwindcss
+xcopy
+reduxjs
+clsx
+mult
+copyfiles
+hoppscotch
+todos
+flyctl
+flydotio
