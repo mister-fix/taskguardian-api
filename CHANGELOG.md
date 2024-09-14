@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Updated
 
-- `README.md` file: expanded project structure tree to reflect the addition of the Plop configuration file.
+- `README.md` file: expanded project structure tree to reflect the addition of the `plop-templates/` folder.
 
 ## [0.1.0] - 09/14/2024
 
