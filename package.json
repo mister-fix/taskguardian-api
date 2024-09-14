@@ -1,0 +1,46 @@
+{
+  "name": "taskguardian-api",
+  "description": "A secure and efficient task management API with JWT authentication, route protection, and comprehensive testing.",
+  "private": true,
+  "version": "0.0.1",
+  "author": "@mister-fix <https://github.com/mister-fix/>",
+  "license": "MIT",
+  "keywords": [
+    "task management",
+    "API",
+    "Express.js",
+    "JWT",
+    "authentication",
+    "MongoDB",
+    "secure API",
+    "backend development"
+  ],
+  "scripts": {
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier . !\"plop-templates/*.hbs\" --write",
+    "format": "npm run lint:fix && npm run prettier",
+    "prepare": "husky || true",
+    "cspell": "cspell ."
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --quiet --fix"
+    ],
+    "*.{json,js,ts}": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@cspell/eslint-plugin": "^8.14.2",
+    "cspell": "^8.14.2",
+    "cspell-dictionary": "^8.14.2",
+    "eslint": "^8.57.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "pretty-quick": "^4.0.0"
+  }
+}
