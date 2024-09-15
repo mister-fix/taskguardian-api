@@ -42,6 +42,11 @@ taskguardian-api/
 ├─ docs/                  # GitHub supporting documents and templates
 ├─ plop-templates/        # Code generation templates (e.g., controllers, services)
 ├─ src/                   # Main source code directory
+│  ├─ config/             # Configuration files (e.g., database, environment)
+│  ├─ controllers/        # API route handlers
+│  ├─ middleware/         # Express middleware functions
+│  ├─ routes/             # API routes (e.g., tasks, users)
+│  ├─ utils/              # Utility functions (e.g., retry mechanisms, logger)
 │  ├─ app.js              # Express app setup
 ├─ tests/                 # API Integration tests directory
 ├─ .commitlintrc.js       # Commit message linting configuration
