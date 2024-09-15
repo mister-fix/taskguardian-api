@@ -4,6 +4,9 @@ require('module-alias/register');
 // Load the environment variables from a '.env' file into process.env
 require('dotenv').config();
 
+// Import custom API logger
+const logger = require('@utils/logger');
+
 // Import the Express app instance
 const app = require('@src/app');
 
@@ -22,7 +25,7 @@ const server = app.listen(port, host);
  */
 server.on('listening', () => {
   // Log the successful server launch message
-  console.log(`server running on: http://${host}:${port}`);
+  logger.success(`server running on: http://${host}:${port}`);
 });
 
 /**
@@ -32,7 +35,7 @@ server.on('listening', () => {
  * @param {Error} err - The error object containing details a bout the error.
  */
 server.on('error', (err) => {
-  console.error('server encountered an error:', err);
+  logger.error('server encountered an error:', err);
 });
 
 /**
@@ -42,7 +45,7 @@ server.on('error', (err) => {
  * We use this event to clean up resources, like closing database connections.
  */
 server.on('close', async () => {
-  console.warn('server is closing, cleaning up resources...');
+  logger.warn('server is closing, cleaning up resources...');
 });
 
 /**
@@ -59,15 +62,15 @@ server.on('close', async () => {
  * @returns {Promise<void>} A Promise that resolves when the shutdown process is complete.
  */
 const handleShutdownSignal = async (signal) => {
-  console.warn(`received ${signal}, shutting down server...`);
+  logger.warn(`received ${signal}, shutting down server...`);
 
   // Close the server after the database is closed
   server.close(() => {
-    console.warn('server closed');
+    logger.warn('server closed');
 
     // Set a slight delay to ensure logs are flushed before exiting
     setTimeout(() => {
-      console.warn('exiting process...');
+      logger.warn('exiting process...');
       process.exit(0); // Exit the process safely
     }, 100);
   });
