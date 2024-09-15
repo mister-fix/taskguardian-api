@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.2] - 09/14/2024
+
+### Added
+
+- Custom API console and file logging functionality with `winston` (`src/utils/logger.js`).
+- HTTP Requests logging functionality with `winston` and `express-winston` packages (`src/middleware/requests-logger.js`).
+- `src/config/` folder containing:
+  - `allowed-origins.js` file, which has an array of whitelisted origin sources allowed to interact with the API.
+  - `cors-options.js` file, which has the options defined for use with `cors`.
+  - `csp-directives.js` file, which has the content security policy to use with `helmet`.
+  - `morgan-format.js` file, which contains the defined custom format for use with `morgan`.
+  - `express-winston-format.js` file, which contains the defined custom logging format for use with the `winston` and `express-winston` packages.
+- `src/middleware` folder containing:
+  - `error-handler.js` and `unknown-endpoint.js` files, custom error and unknown endpoint handling modules for the API.
+- `src/controllers/` folder containing:
+  - `index-controller.js` file, which contains the dedicated controller for the `index-router.js` file.
+- `src/routes/` folder containing:
+  - `main-router.js` file, which serves as the main API/application entrypoint router.
+  - `index-router.js` file, which serves as the index API router.
+- New dependencies: `@colors/colors`, `date-fns`, `express-winston`, `uuid`, `winston`, `winston-timestamp-colorize`.
+
+### Updated
+
+- Replaced `console.log` statements in the `index.js` file with custom `winston` logger for improved log management.
+- `README.md` file: expanded project structure tree to reflect the addition of the `config/`, `controllers/`, `middleware/`, `routes/`, and `utils` folder in the `src/` directory.
+
 ## [0.2.1] - 09/14/2024
 
 ### Added
@@ -140,7 +166,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` and `package-lock.json` for npm dependencies.
 - `README.md` for project documentation.
 
-[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.1...HEAD
+[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.2...v0.2.2
 [0.2.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.1...v0.1.2
