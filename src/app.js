@@ -7,6 +7,16 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const cors = require('cors');
 
+// Import custom configuration modules
+const getMorganFormat = require('@config/morgan-format');
+const cspDirectives = require('@config/csp-directives');
+const corsOptions = require('@config/cors-options');
+
+// Import custom middleware
+const unknownEndpoint = require('@middleware/unknown-endpoint');
+const requestsLogger = require('@middleware/requests-logger');
+const errorHandler = require('@middleware/error-handler');
+
 // Initialize an Express application instance
 const app = express();
 
@@ -34,19 +44,30 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Enable CORS with custom options, and Helmet for security
-app.use(cors());
-app.use(helmet());
+app.use(cors(corsOptions));
+app.use(helmet(cspDirectives));
 
 // Enable HTTP request logging to console with Morgan
-app.use(morgan('tiny'));
+app.use(morgan(getMorganFormat()));
+
+// Enable HTTP request logging to file with Winston
+app.use(requestsLogger);
 
 // Serve static files from the 'dist' directory
 app.use(express.static('dist'));
 
-// Mounting the root endpoint
-app.use('/', (req, res) => {
-  res.json({ message: '👋 Hello from the API!' });
+// Redirect root URL requests to the main API endpoint
+app.get('/', (req, res) => {
+  res.redirect('/api');
 });
+
+// Mounting the root endpoint
+app.use('/api', require('@routes/main-router'));
+
+// Register unknown endpoint middleware
+app.use(unknownEndpoint);
+// Register error handling middleware
+app.use(errorHandler);
 
 // Export the Express application instance
 module.exports = app;
