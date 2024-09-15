@@ -50,6 +50,7 @@ taskguardian-api/
 │  ├─ app.js              # Express app setup
 ├─ tests/                 # API Integration tests directory
 ├─ .commitlintrc.js       # Commit message linting configuration
+├─ .dockerignore          # Docker ignore rules for builds
 ├─ .editorconfig          # Editor configuration for consistent coding styles
 ├─ .env.example           # Example .env file
 ├─ .eslintignore          # Files and directories to ignore for ESLint
@@ -60,6 +61,8 @@ taskguardian-api/
 ├─ .prettierrc            # Prettier configuration for code formatting
 ├─ CHANGELOG.md           # Changelog for project updates
 ├─ cspell.json            # Configuration for spellcheck
+├─ Dockerfile             # Docker image for the application
+├─ fly.toml               # Fly.io deployment configuration
 ├─ index.js               # Application entry point
 ├─ jsconfig.json          # JavaScript project configuration (aliases)
 ├─ jsdoc.config.json      # JSDoc configuration
