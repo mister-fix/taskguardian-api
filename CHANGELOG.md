@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.3.0] - 09/15/2024
 
+### Added
+
 - Docker support:
   - `Dockerfile` for containerizing the TaskGuardian API.
   - `.dockerignore` for ignoring unnecessary files in Docker builds.
