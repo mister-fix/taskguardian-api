@@ -7,7 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.2.2] - 09/14/2024
+## [0.3.0] - 09/15/2024
+
+- Docker support:
+  - `Dockerfile` for containerizing the TaskGuardian API.
+  - `.dockerignore` for ignoring unnecessary files in Docker builds.
+- Fly.io deployment configurations:
+  - `fly.toml` for deployment configuration on Fly.io.
+  - `fly-deploy.yml` GitHub Actions workflow file to automate Fly.io deployments.
+- New development dependency: `@flydotio/dockerfile`.
+- Fly deployment and remote log viewing scripts in the `package.json` file.
+
+### Updated
+
+- [0.2.2] tag date from '09/14/2024' to '09/15/2024' in this `CHANGELOG.md` file.
+- `README.md` file: expanded project structure tree to reflect the addition of the `.dockerignore`, `Dockerfile`, and `fly.toml` files in the root project directory.
+
+## [0.2.2] - 09/15/2024
 
 ### Added
 
@@ -166,7 +182,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` and `package-lock.json` for npm dependencies.
 - `README.md` for project documentation.
 
-[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.2...HEAD
+[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.2...v0.2.2
 [0.2.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.1.2...v0.2.0
