@@ -2,7 +2,7 @@
   "name": "taskguardian-api",
   "description": "A secure and efficient task management API with JWT authentication, route protection, and comprehensive testing.",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "@mister-fix <https://github.com/mister-fix/>",
   "license": "MIT",
   "keywords": [
