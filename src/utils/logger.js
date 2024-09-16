@@ -74,7 +74,9 @@ const consoleFormat = format.combine(
   winstonTimestampColorize({ color: 'grey' }),
   // format.align(),
   format.printf(({ timestamp, level, message }) => {
-    return `${timestamp} ${machineID} (${colors.brightYellow(process.pid)}) [${level}]: ${message}`;
+    return process.env.NODE_ENV !== 'production'
+      ? `${timestamp} ${machineID} (${colors.brightYellow(process.pid)}) [${level}]: ${message}`
+      : `${message}`;
   }),
 );
 
