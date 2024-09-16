@@ -25,11 +25,49 @@ TaskGuardian API is a powerful backend service designed to manage tasks, users, 
 
 ## Quick Start
 
-Quick start instructions are coming soon.
+Follow the steps below to get TaskGuardian API up and running on your local machine or deployed to Fly.io. These quick start instructions assume you have Node.js, NPM, Docker, and the GitHub CLI installed on your machine.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/mister-fix/taskguardian-api.git
+cd taskguardian-api
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### BUild and Start the API (with Docker)
+
+```bash
+docker build -t taskguardian-api .
+docker run -p 3000:3000 taskguardian-api
+```
+
+### Access the API
+
+Once the API is running, you can access it locally at: [http://localhost:3000/api](http://localhost:3000/api)
+
+Alternatively, the API is accessible via the web at: [https://taskguardian-api.fly.dev/api](https://taskguardian-api.fly.dev/api). This URL provides access to the TaskGuardian API endpoints, allowing interaction with the API from any web client or tool like Postman or Hoppscotch.
 
 ## API Documentation
 
-API documentation is coming soon.
+The API provides the following key endpoints:
+
+- `GET /tasks`: Get a list of all tasks.
+- `POST /tasks`: Create a new task.
+- `PUT /tasks/:id`: Update an existing task.
+- `DELETE /tasks/:id`: Delete a task.
+- `POST /auth/register`: Register a new user.
+- `POST /auth/verify-email:token`: Verify a user's email address using a token.
+- `POST /auth/login`: Login a user and retrieve a JWT token.
+- `POST /auth/forgot-password`: Request a password reset link for the user.
+- `POST /auth/reset-password/:token`: Reset a user's password using a reset token.
+
+Detailed API usage documentation is coming soon.
 
 ## Project Structure
 
