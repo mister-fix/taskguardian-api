@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1] - 09/15/2024
+
+### Added
+
+- Details under the 'Quick Start' section of the `README.md` file.
+- Details under the `API Documentation` section of the `README.md` file.
+
+### Refactored
+
+- Optimized console log format in `logger.js` to differentiate between production and development environments.
+
 ## [0.3.0] - 09/15/2024
 
 ### Added
@@ -184,7 +195,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` and `package-lock.json` for npm dependencies.
 - `README.md` for project documentation.
 
-[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.3.0...HEAD
+[unreleased]: https://github.com/mister-fix/taskguardian-api/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.2...v0.2.2
 [0.2.1]: https://github.com/mister-fix/taskguardian-api/compare/v0.2.0...v0.2.1
